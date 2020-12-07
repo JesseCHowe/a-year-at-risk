@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>A Year At Risk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="title">
+  <a href="https://crayton-howe.netlify.app/">Jesse Howe</a>
+  <h1>A Year At Risk</h1>
+  <p>Though the U.S. health care system is projected to be overwhelmed by an influx of patients infected with the novel coronavirus, the pressure on hospitals will vary dramatically across the country. That’s according to new data released by the Harvard Global Health Institute, which for the first time gives a sense of which regions will be particularly stressed and should be preparing most aggressively right now.</p>
+</div>
+<div class="pct-container">
+  <p class="pct-desc">Percent of adults infected over 12 months </p>
+  <div class="pct-btns">
+    <button class="pctBtn active" onclick="updateData('twenty')">20 percent</button>
+    <button class="pctBtn" onclick="updateData('forty')">40 percent </button>
+    <button class="pctBtn" onclick="updateData('sixty')">60 percent</button>
+  </div>
+</div>
+
+<div class="map_container">
+  <div id="rectMap">
+    <svg viewBox="0 0 770 660" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%; overflow: hidden;"></svg>
+  </div>
+</div>
+
+<div id="table_container"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
